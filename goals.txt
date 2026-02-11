@@ -1,0 +1,2 @@
+// eileen will to matplotlib
+// opacity as markers for magnitude
