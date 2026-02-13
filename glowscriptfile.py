@@ -25,5 +25,3 @@ floatages = csv_parse(f)
 voltages = [[float(item) for item in sublist] for sublist in floatages]
 
 grid(voltages)
-
- 
