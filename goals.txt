@@ -1,2 +1,4 @@
-// eileen will to matplotlib
-// opacity as markers for magnitude
+1. Colored equipotential / electric field diagram with electrodes outlined. (done)
+2. One paragraph explaining your thought process for how you chose which electrode configuration matched your data. (Estella)
+3. A print-out of your 3-D potential field IN COLOR. (Eileen)
+4. A print-out of your 2-D electric field map & a link to the code you used to create it. (both)
