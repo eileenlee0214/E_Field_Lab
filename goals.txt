@@ -2,3 +2,5 @@
 2. One paragraph explaining your thought process for how you chose which electrode configuration matched your data. (Estella)
 3. A print-out of your 3-D potential field IN COLOR. (Eileen)
 4. A print-out of your 2-D electric field map & a link to the code you used to create it. (both)
+5. From the potential field, create a contour map of equipotentials!
+    To get this point, you must also include a print-out of your electric field plot AND a print-out of your code.
