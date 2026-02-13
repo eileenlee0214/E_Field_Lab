@@ -15,7 +15,10 @@ def grid(values):
     for i in range(L):
         for j in range(H):
             volt = values[i][j]
-            text(pos = vector(j*4-(2*H), i*4-(2*L), 0), text=volt)
+            dvx = values[i+1][j] - values[i][j]
+            dvy = values[i][j+1] - values[i][j]
+            arrow(pos = vector(j*4-(2*H), i*4-(2*L), 0), axis=vec(3,1,0), color=color.orange)
+            
             # x positions increase to the right, but y positions 
             # increase going upwards
                 
@@ -24,4 +27,8 @@ f = read_local_file(scene.title_anchor)
 floatages = csv_parse(f)
 voltages = [[float(item) for item in sublist] for sublist in floatages]
 
+
+
 grid(voltages)
+
+ 
