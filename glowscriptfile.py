@@ -1,4 +1,4 @@
-# Web VPython 3.2
+Web VPython 3.2
 def csv_parse(fd): # specify file
     items = []
     text = fd.text
@@ -35,7 +35,7 @@ def grid(values):
             arrow(pos = vector(j*4-(2*H), i*4-(2*L), 0), 
                   axis = vector(Ex_normalized, Ey_normalized, 0), 
                   color = color.orange)
-                
+            # just needs some opacity here
     
 f = read_local_file(scene.title_anchor)
 floatages = csv_parse(f)
