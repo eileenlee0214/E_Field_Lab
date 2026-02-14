@@ -67,7 +67,7 @@ cbar.set_label(r'Voltage (V)', rotation=270, labelpad=20)
 # Labels
 ax.set_xlabel(r'X Position')
 ax.set_ylabel(r'Y Position')
-ax.set_title(r'Equipotential Lines and Electric Field Vectors')
+ax.set_title(r'2D Equipotential Lines')
 ax.set_aspect('equal')
 ax.grid(True, alpha=0.3, color='white', linestyle='--')
 
