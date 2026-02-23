@@ -13,17 +13,34 @@ def grid(values):
     H = len(values[0])
     arrow_length = 3
     
+    #Finding max_E
+    max_E = 0
     for i in range(L-1):
         for j in range(H-1):
-            volt = values[i][j]
+            # volt = values[i][j]
 
-            dvx = float(values[i][j+1]) - float(values[i][j])
-            dvy = float(values[i+1][j]) - float(values[i][j])
+            dvx = values[i][j+1] - values[i][j]
+            dvy = values[i+1][j] - values[i][j]
             
             Ex = -dvx
             Ey = -dvy
             
             E_norm = sqrt(Ex**2 + Ey**2)
+            if E_norm > max_E: 
+                max_E = E_norm
+        
+        if max_E == 0: 
+            max_E = 1 #to not divide by 0
+        
+    for i in range(L-1): 
+        for j in range(H-1): 
+            dvx = values[i][j+1] - values[i][j]
+            dvy = values[i+1][j] - values[i][j] 
+            
+            Ex = -dvx 
+            Ey = -dvy 
+            
+            E_norm = sqrt(Ex**2 + Ey**2) 
             
             if E_norm > 0:
                 Ex_normalized = (Ex / E_norm) * arrow_length
@@ -32,10 +49,14 @@ def grid(values):
                 Ex_normalized = 0
                 Ey_normalized = 0
             
+             # just needs some opacity here
+            opav = 0.2 + 0.8 * (E_norm / max_E) 
+            
             arrow(pos = vector(j*4-(2*H), i*4-(2*L), 0), 
                   axis = vector(Ex_normalized, Ey_normalized, 0), 
-                  color = color.orange)
-            # just needs some opacity here
+                  color = color.cyan, 
+                  opacity = opav)
+           
     
 f = read_local_file(scene.title_anchor)
 floatages = csv_parse(f)
