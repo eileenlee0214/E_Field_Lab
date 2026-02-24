@@ -49,8 +49,9 @@ def grid(values):
                 Ex_normalized = 0
                 Ey_normalized = 0
             
-             # just needs some opacity here
-            opav = 0.2 + 0.8 * (E_norm / max_E) 
+             # fixed to log, but still has the weird outlier 0.0V part !
+             # left this code so i wouldn't mess up the consistency/integrity of the code for the rest - eileen
+            opav = 0.2 + 0.8 * (log(1 + E_norm) / log(1 + max_E))
             
             arrow(pos = vector(j*4-(2*H), i*4-(2*L), 0), 
                   axis = vector(Ex_normalized, Ey_normalized, 0), 
