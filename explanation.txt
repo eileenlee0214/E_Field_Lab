@@ -1,1 +1,7 @@
-// One paragraph explaining your thought process for how you chose which electrode configuration matched your data.
+Estella Yee, Eileen Lee 
+Physics E Field Lab 
+Ms. Sharaf 
+
+We chose two point particles (a dipole) as our electrode configuration. Using the voltage values that we collected during class, we were able to construct equipotential field lines by connecting points of similar electric potential. After mapping the equipotential lines, we drew electric field lines perpendicular to them, in the direction decreasing equipotential. This resulted in electric field lines that were dispersing from one point (on the left hand side) and converging towards another (on the right hand side). This told us that there was most likely a positive point particle on the left hand side, and a negative point particle on the right hand side. We were successful in determining the electrode configuration! 
+
+Note: there was a measured voltage value of 0 in the right-hand corner (top in the electric field map, and bottom in the csv file) that was likely a result of the probe moving slightly off the edge of the board during data collection. However, this outlier did not impact our analysis of the field pattern. 
